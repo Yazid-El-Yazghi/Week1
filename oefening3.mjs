@@ -33,7 +33,7 @@ console.log(som);
 //Sterrenpiramide
 let number = 0;
 let num;
-for(let hoogte = 5; number <= 5; number++){
+for(let hoogte = 5; number <= hoogte; number++){
     console.log();
     num = 1;
     while(num <= number){
@@ -74,6 +74,36 @@ for(let k = 0; k <= 100; k++){
 }
 
 //Sterrenpiramide uitbreiden
+let numbr = 0;
+let hoogt = parseFloat(await userInput.question('Geef een getal in: '));
+if(hoogt %2 != 0){
+    numbr = 1;
+}
+for(hoogt;numbr <= hoogt; numbr += 2){
+    let cpt = numbr;
+    let onvv = 0;
+    while(cpt <= hoogt){
+        cpt += 2;
+        onvv++;
+        }
+    console.log();
+    process.stdout.write(' '.repeat(onvv));
+    process.stdout.write('*'.repeat(numbr));
+}
+for(numbr = hoogt; numbr > 0; numbr -= 2){
+    let cpt2 = numbr;
+    let onvv2 = 0;
+    while(cpt2 <= hoogt){
+        cpt2 += 2;
+        onvv2++;
+        }
+    console.log();
+    process.stdout.write(' '.repeat(onvv2));
+    process.stdout.write('*'.repeat(numbr));
+}
+
+
+
 
 //Lopende gemiddelde
 let compt = 0;
