@@ -2,7 +2,7 @@ import * as readline from 'node:readline/promises';
 import{stdin as input, stdout as output} from 'node:process';
 const userInput = readline.createInterface({input, output});
 
-//Even Oneven 
+/* //Even Oneven 
 let getal = parseFloat(await userInput.question('Geef een getal in:'));
 
 if(getal1 % 2 == 0){
@@ -211,12 +211,12 @@ let tab = [number1, number2, number3, number4, number5];
 let gemiddelde = (number1+number2+number3+number4+number5)/5;
 tab.sort();
 
-console.log('Het hoogste getal is: ' +tab[4]+  ' het laagste getal is: '+tab[0]+ ' en het gemiddelde is: '+gemiddelde);
+console.log('Het hoogste getal is: ' +tab[4]+  ' het laagste getal is: '+tab[0]+ ' en het gemiddelde is: '+gemiddelde); */
 
 //Schrikkeljaar
 let jaar = parseFloat(await userInput.question('Geef een jaar in:'));
-if(jaar%4 == 0 || jaar%100 != 0 || jaar%400 == 0){
+if(jaar%4 == 0 && (jaar%100 != 0 || jaar%400 == 0)){
     console.log('Het jaar '+jaar+ ' is een schrikkeljaar. Het maand Februari zal 29 dagen hebben.');
 }else {
     console.log('Het jaar '+jaar+ ' is geen schrikkeljaar. Het maand Februari zal 29 dagen hebben.');
-}
+}  

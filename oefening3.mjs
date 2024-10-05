@@ -2,7 +2,7 @@ import * as readline from 'node:readline/promises';
 import{stdin as input, stdout as output} from 'node:process';
 const userInput = readline.createInterface({input, output});
 
-//Even of oneven
+/* //Even of oneven
 for(let i = 0; i <= 20; i+=2){
     console.log(i);
 }
@@ -71,7 +71,7 @@ for(let k = 0; k <= 100; k++){
     }else{
         console.log(k);
     }
-}
+} */
 
 //Sterrenpiramide uitbreiden
 let numbr = 0;
@@ -90,7 +90,7 @@ for(hoogt;numbr <= hoogt; numbr += 2){
     process.stdout.write(' '.repeat(onvv));
     process.stdout.write('*'.repeat(numbr));
 }
-for(numbr = hoogt; numbr > 0; numbr -= 2){
+for(numbr = hoogt-2; numbr > 0; numbr -= 2){
     let cpt2 = numbr;
     let onvv2 = 0;
     while(cpt2 <= hoogt){
@@ -102,10 +102,12 @@ for(numbr = hoogt; numbr > 0; numbr -= 2){
     process.stdout.write('*'.repeat(numbr));
 }
 
+process.exit();
 
 
 
-//Lopende gemiddelde
+
+/* //Lopende gemiddelde
 let compt = 0;
 let opteller = 0;
 let gemid = 0;
@@ -118,4 +120,10 @@ while(gemid <= 25){
     console.log('Je gemidelde is: '+gemid);
 }
 
-process.exit();
+process.exit(); */
+
+let i = 0
+while(i < 5){
+    console.log("Bonjour");
+    i++;
+}
